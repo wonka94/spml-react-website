@@ -1,0 +1,59 @@
+header {
+    background-color: #fff;
+    height: 10vh;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+header a {
+    margin-left: 30px;
+    transition: 0.5s;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #010101;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+header a:hover {
+    color: #15b788;
+
+}
+
+header a.active {
+    font-weight: 500;
+    text-transform: uppercase; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    header img {
+        margin-top: 30px;
+    }
+
+    header .nav .flex {
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+.heading {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.heading h1 {
+    color: #2d3954;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+    /* font-weight: 400; */
+    letter-spacing: 2.5px;
+    word-spacing: 2.5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.heading p {
+    color: #01bf71;
+    text-transform: uppercase;
+    /* font-size: 16px; */
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+@media screen and (max-width: 480px) {
+    .heading h1 {
+        font-size: 32px;
+    }
+}

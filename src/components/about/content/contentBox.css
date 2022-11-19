@@ -1,0 +1,454 @@
+section {
+    padding: 80px 0;
+}
+
+.section-bg {
+    background-color: #fafafb;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009961;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.imgWrap {
+    height: 100%;
+    width: 100%;
+    /* box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1); */
+}
+
+@media (max-width: 767px) {
+    .section-md-t3 {
+        padding-top: 3rem;
+    }
+}
+
+
+/* AboutContentBox */
+.AboutContentBox {
+    margin-bottom: 40px;
+}
+
+.AboutContentBox .heading {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.AboutContentBox p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    display: block;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .AboutContentBox .container {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .AboutContentBox p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .AboutContentBox .container img {
+        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+        background: center center no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        /* width: 100%; */
+        margin: 0 0 10px 0;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+}
+
+
+.btnWrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -20px;
+}
+
+.AboutContentBox .video-box {
+    background: center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+}
+
+/* AboutContentBox */
+
+/* ContentBox */
+.MissionContentBox {
+    margin-bottom: 40px;
+}
+
+.MissionContentBox p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    text-align: right;
+    /* max-width:80%; */
+}
+
+.MissionContentBox .heading {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .MissionContentBox .container {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .MissionContentBox p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .MissionContentBox .container img {
+        margin-top: 50px;
+        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+        background: center center no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        /* width: 100%; */
+        margin: 0 0 10px 0;
+        padding-right: 0;
+    }
+}
+
+/* ContentBox */
+
+/* VisionContentBox */
+.VisionContentBox {
+    margin-bottom: 40px;
+}
+
+.VisionContentBox p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    text-align: left;
+    /* max-width:80%; */
+}
+
+.VisionContentBox .heading {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .VisionContentBox .container {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .VisionContentBox p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .VisionContentBox .container img {
+        margin-top: 50px;
+        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    }
+}
+
+.VisionContentBox .video-box {
+    background: center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+}
+
+.VisionContentBox .container img {
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    background: center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    /* width: 100%; */
+    margin: 0 0 10px 0;
+    padding-right: 0;
+}
+
+/* VisionContentBox */
+
+/* PhilosophyContentBox */
+.PhilosophyContentBox {
+    margin-bottom: 40px;
+}
+
+.PhilosophyContentBox p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    text-align: right;
+    /* max-width:80%; */
+}
+
+.PhilosophyContentBox .heading {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .PhilosophyContentBox .container {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .PhilosophyContentBox p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .PhilosophyContentBox .container img {
+        margin-top: 50px;
+        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+        background: center center no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        /* width: 100%; */
+        margin: 0 0 10px 0;
+        padding-right: 0;
+    }
+}
+
+/* PhilosophyContentBox */
+
+/* TeamContent */
+.Positions h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Positions h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009961;
+    bottom: 0;
+    left: 0;
+}
+
+.Management-Positions h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Management-Positions h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009961;
+    bottom: 0;
+    right:0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-box-d {
+    padding-bottom: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.title-box-d .title-d {
+    font-weight: 600;
+    font-size: 2rem;
+
+
+}
+
+.title-box-d .title-d h5 {
+    font-style: italic;
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 5px;
+
+}
+
+.title-box-d .title-d:after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background-color: #2eca6a;
+    bottom: 20px;
+    left: 0;
+}
+
+.color-text-a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: 1.25rem;
+}
+
+
+.TeamContent .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.TeamContent .member .member-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+}
+
+.TeamContent .member .member-info-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    transition: bottom 0.4s;
+}
+
+.TeamContent .member .member-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.TeamContent .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.TeamContent .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    right: 0;
+    height: 48px;
+    transition: bottom ease-in-out 0.4s;
+    text-align: center;
+}
+
+.TeamContent .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.TeamContent .member .social a:hover {
+    color: #428bca;
+}
+
+.TeamContent .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.TeamContent .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.TeamContent .member:hover .member-info-content {
+    bottom: 60px;
+    transition: bottom 0.4s;
+}
+
+.TeamContent .member:hover .social {
+    bottom: 0;
+    transition: bottom ease-in-out 0.4s;
+}
+
+/* TeamContent */
+

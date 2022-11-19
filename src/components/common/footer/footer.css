@@ -1,0 +1,136 @@
+footer {
+    background-color: #fff;
+    padding: 50px 0;
+    color: #010101;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 4fr 2fr 3fr 4fr;
+    grid-gap: 20px;
+}
+
+footer img {
+    margin-top: -40px;
+    width: 250px;
+    /* height: 90px; */
+}
+
+footer h2 {
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer p {
+    color: #1d2636;
+    margin: 20px 0;
+    font-size: 17px
+}
+
+.portfolio{
+    margin-top: -15px;
+}
+
+footer h3 {
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer ul {
+    display: block;
+}
+
+footer ul li {
+    display: block;
+    color: #1d2636;
+    margin-bottom: 20px;
+
+}
+
+footer ul li a {
+    display: flex;
+    color: #1d2636;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 800px) {
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+footer input {
+    background-color: #f1f1f1;
+    padding: 17px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 17px 30px;
+    background: #27ae60;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-contact p span {
+    color: #3EC1D5;
+    font-weight: 700;
+}
+
+.social-links a {
+    /* font-size: 16px; */
+    display: inline-block;
+    background: #394047;
+    color: #fff;
+    line-height: 1;
+    padding: 10px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #428bca;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-area-bottom {
+    background: #f1f1f1 none repeat scroll 0 0;
+    padding: 15px 0;
+}
+
+.copyright-text a:hover {
+    text-decoration: underline;
+    color: #3EC1D5;
+}
+
+.copyright-text a {
+    color: #444;
+}
+
+.copyright>p {
+    margin-bottom: 0;
+    color: #444;
+}
+
+.copyright a,
+.credits a {
+    color: #3EC1D5;
+}
+
+.credits {
+    padding-top: 5px;
+    text-align: center;
+}
