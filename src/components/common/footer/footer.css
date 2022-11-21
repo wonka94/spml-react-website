@@ -6,8 +6,9 @@ footer {
 
 footer .container {
     display: grid;
-    grid-template-columns: 4fr 2fr 3fr 4fr;
-    grid-gap: 20px;
+    grid-template-columns: 4fr 2fr 4fr 2fr;
+    grid-gap: 10px;
+
 }
 
 footer img {
@@ -27,7 +28,7 @@ footer p {
     font-size: 17px
 }
 
-.portfolio{
+.portfolio {
     margin-top: -15px;
 }
 
@@ -45,21 +46,19 @@ footer ul li {
     display: block;
     color: #1d2636;
     margin-bottom: 20px;
+    margin-left: -28px;
 
 }
 
 footer ul li a {
-    display: flex;
     color: #1d2636;
     font-weight: 500;
     text-decoration: none;
-    display: inline-block;
-
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     footer .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 

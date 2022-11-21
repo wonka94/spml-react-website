@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Button } from '../../common/button/Button';
-import { ArrowForward, ArrowRight, HeroContent, HeroImage, HeroSection, HeroSlide, HeroSlider, HeroWrapper, NextArrow, PrevArrow, SliderButton } from './HeroElements';
+import { HeroContent, HeroImage, HeroSection, HeroSlide, HeroSlider, HeroWrapper, NextArrow, PrevArrow, SliderButton } from './HeroElements';
 
 
 const Hero = ({ slides, kenBurnsAnimation }) => {
@@ -59,34 +59,34 @@ const Hero = ({ slides, kenBurnsAnimation }) => {
                         return (
                             <HeroSlide key={index}>
                                 {index === current && (
-                                <HeroSlider>
-                                    <HeroImage src={slide.image} alt={slide.alt} kenBurnsAnimation={kenBurnsAnimation ? 0: 1}/>
-                                    <HeroContent>
-                                        <h1>{slide.title}</h1>
-                                        <p>{slide.subtitle}</p>
-                                        <Button
-                                            to={slide.path}
-                                            onMouseEnter={onHover}
-                                            onMouseLeave={onHover}
-                                            primary="true"
-                                            css={`
+                                    <HeroSlider>
+                                        <HeroImage src={slide.image} alt={slide.alt} kenBurnsAnimation={kenBurnsAnimation ? 0 : 1} />
+                                        <HeroContent>
+                                            <h1>{slide.title}</h1>
+                                            <p>{slide.subtitle}</p>
+                                            <Button
+                                                to={slide.path}
+                                                onMouseEnter={onHover}
+                                                onMouseLeave={onHover}
+                                                primary="true"
+                                                css={`
                                             color: #ffffff;
                                             max-width: 160px;
                                             font-size: 1.2rem;
                                             `}
-                                        >
-                                            {slide.label}  {hover ? <ArrowForward /> : <ArrowRight />}
-                                        </Button>
-                                    </HeroContent>
-                                </HeroSlider>
+                                            >
+                                                {slide.label}
+                                            </Button>
+                                        </HeroContent>
+                                    </HeroSlider>
                                 )}
                             </HeroSlide>
                         );
-                })}
-                <SliderButton>
-                    <PrevArrow onClick={prevSlide}/>
-                    <NextArrow onClick={nextSlide}/>
-                </SliderButton>
+                    })}
+                    <SliderButton>
+                        <PrevArrow onClick={prevSlide} />
+                        <NextArrow onClick={nextSlide} />
+                    </SliderButton>
                 </HeroWrapper>
             </HeroSection>
         </>

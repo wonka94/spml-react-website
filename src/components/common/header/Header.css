@@ -1,59 +1,95 @@
-header {
+.header {
     background-color: #fff;
     height: 10vh;
-    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-a {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
+    box-shadow: 0 2px 28px rgb(0 0 0 / 6%);
+    padding: 20px 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 1rem;
+    width: 100%;
 }
 
-header a {
-    margin-left: 30px;
-    transition: 0.5s;
+.header img {
+    width: 170px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+.nav-links a {
+    transition: 0.5s ease-in-out;
     font-weight: 400;
     font-family: 'Oswald', sans-serif;
     color: #010101;
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 1.125rem;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
     cursor: pointer;
 }
 
-header a:hover {
+.nav-links a:hover {
     color: #15b788;
-
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
 }
 
-header a.active {
-    font-weight: 500;
-    text-transform: uppercase; 
+.nav-links a.active {
+    font-weight: 400;
+    color: #1395BA;
 }
 
-ul {
-    list-style: none;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-
-@media screen and (min-width: 768px) {
-    header {
-        padding: 0;
+@media screen and (max-width:1240px) {
+    .hamburger {
+        display: block;
     }
 
-    header img {
-        margin-top: 30px;
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: -1;
+        background: rgba(21, 183, 136, .9);
     }
 
-    header .nav .flex {
-        display: none;
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .nav-links a:hover {
+        color: #1395BA;
+        font-weight: 400;
+        transition: 0.2s ease-in-out;
     }
 }

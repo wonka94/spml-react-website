@@ -6,6 +6,10 @@ export const BackgroundSection = styled.div`
     position: relative;
     overflow: hidden;
     width: 100%;
+
+    @media screen and (max-width: 800px) {
+        height: 30vh;
+    }
 `;
 
 export const BackgroundContainer = styled.div`
@@ -61,6 +65,10 @@ export const BackgroundImg = styled.img`
     width: 100vw;
     height: 55vh;
     object-fit: cover;
+
+    @media screen and (max-width: 800px) {
+        height: 30vh;
+    }
 `;
 
 export const ContentWrapper = styled.div`

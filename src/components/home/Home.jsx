@@ -11,13 +11,13 @@ import VideoSection from './videosection/VideoSection';
 const Home = () => {
     return (
         <>
-            <Hero slides={SliderData}/>
-            <InfoSection/>
-            <Services/>
-            <VideoSection/>
-            <Statistics/>
-            <Team/>
-            <CallToAction/>
+            <Hero slides={SliderData} />
+            <InfoSection />
+            <Services />
+            <VideoSection />
+            <Statistics />
+            <Team />
+            <CallToAction />
         </>
     )
 }

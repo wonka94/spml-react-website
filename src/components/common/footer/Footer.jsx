@@ -1,11 +1,11 @@
 import React from 'react';
 import './footer.css';
-import { BsFacebook, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 import { footer } from '../../data/Data';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from '../button/Button';
+
 
 const Footer = () => {
     return (
@@ -20,11 +20,6 @@ const Footer = () => {
                                 refineries including the marketing of Petroleum Products both
                                 refined and unrefined.
                             </p>
-                            <div className="social-links">
-                                <a href="/" className="linkedin"><BsLinkedin size={20} /></a>
-                                <a href="/" className="twitter"><BsTwitter size={20} /></a>
-                                <a href="/" className="facebook"><BsFacebook size={20} /></a>
-                            </div>
                         </div>
                     </div>
                     {footer.map((val) => (
@@ -32,9 +27,7 @@ const Footer = () => {
                             <h3>{val.title}</h3>
                             <ul>
                                 {val.text.map((items) => (
-                                    <li>
-                                        <Link to={items.path}>{items.list}</Link>
-                                    </li>
+                                    <li><Link to={items.path}>{items.list}</Link></li>
                                 ))}
                             </ul>
                         </div>
@@ -42,25 +35,18 @@ const Footer = () => {
                     <div className="box footer-contact">
                         <h3>Get in Touch</h3>
                         <p>
-                            #1 White Avenue, <br/>
-                            East Legon Extension,<br/>
-                            Accra Ghana <br/><br/>
-                            <span>Phone:</span> +233 209 111 711<br/>
-                            <span>Email:</span> maristonintlgroup@gmail.com<br/>
+                            #1 White Avenue, <br />
+                            East Legon Extension,<br />
+                            Accra Ghana <br /><br />
+                            <span>Phone:</span> +233 209 111 711<br />
+                            <span>Email:</span> maristonintlgroup@gmail.com<br />
                         </p>
                     </div>
                     <div className="box">
-                        <h3>Newsletter</h3>
-                        <p>Receive monthly news updates sent directly into your inbox every month</p>
-                        <div className='input flex'>
-                            <input type='text' placeholder='Email Address' />
-                            <Button
-                                css={`
-                                        color: #ffffff;
-                                        max-width: 160px;
-                                        font-size: 1.2rem;
-                                        `}
-                            >Subscribe</Button>
+                        <h3>Our Socials</h3>
+                        <div className="social-links">
+                            <a href="/" className="linkedin"><BsLinkedin size={20} /></a>
+                            <a href="/" className="facebook"><BsFacebook size={20} /></a>
                         </div>
                     </div>
                 </div>

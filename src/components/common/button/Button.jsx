@@ -2,16 +2,15 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Button = styled(Link)`
-    border-radius: 4px;
+    border-radius: 0;
     background: ${({primary}) => (primary ? '#15b788' : '#1395BA')};
     white-space: nowrap;
-    padding: ${({big}) => (big ? '14px 48px ' : '10px 22px')};
-    color: ${({dark}) => (dark ? '#010606': '#ffffff')};
+    padding: 1rem 3rem;
+    color: #ffffff;
     font-size: ${({fontBig}) => (fontBig ? '20px' : '15px')};
     outline: none;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    /* letter-spacing: 1.5px; */
     text-transform: uppercase;
     text-decoration: none;
     border: none;
@@ -20,12 +19,11 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    /* margin-top: 15px; */
     width: 180px;
     height: 60px;
     margin: 20px;
     line-height: 60px;
-    letter-spacing: 2px;
+    letter-spacing: 0.05rem;
     text-decoration: none;
     text-align: center;
     position: relative;

@@ -40,10 +40,6 @@ section {
     }
 }
 
-.mtop {
-    margin-top: 50px;
-}
-
 .btnWrap {
     display: flex;
     justify-content: flex-start;

@@ -9,6 +9,8 @@ import ServiceImage5 from '../images/ServicesImages/services-5.png';
 import ServiceImage6 from '../images/ServicesImages/services-6.png';
 
 
+
+
 export const SliderData = [
     {
         title: 'Investing to extend and Drive the oil industry forward',
@@ -41,7 +43,7 @@ export const SliderData = [
 
 export const footer = [
     {
-        title: 'Useful Links',
+        title: 'Company',
         text: [
             {
                 list: 'Home',

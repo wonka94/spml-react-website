@@ -29,9 +29,9 @@ const Header = ({ toggle }) => {
                             <NavLinks to="/contact">Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/contact" >Enquiries</NavBtnLink>
-                        </NavBtn>
+                    <NavBtn>
+                        <NavBtnLink to="/contact" >Enquiries</NavBtnLink>
+                    </NavBtn>
                 </NavbarContainer>
             </Nav>
         </>
