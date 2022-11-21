@@ -98,10 +98,6 @@ export const HeroSlide = styled.div`
     height: 100%;
 `;
 
-
-
-
-
 export const HeroSlider = styled.div`
     position: absolute;
     top: 0;
@@ -142,7 +138,7 @@ export const HeroImage = styled.img`
     -ms-animation: ${fadeInRight} 40s cubic-bezier(0.390, 0.575, 0.565, 1.000);
     -webkit-animation: ${fadeInRight} 40s cubic-bezier(0.390, 0.575, 0.565, 1.000);
     -moz-animation: ${fadeInRight} 40s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-    animation-name: ${(kenBurnsAnimation) => (kenBurnsAnimation ? kenBurnsRight : kenBurnsBottomLeft) };
+    animation-name: ${(kenBurnsAnimation) => (kenBurnsAnimation ? kenBurnsRight : kenBurnsBottomLeft)};
     animation-duration: 8s;
     animation-iteration-count: infinite;
 
@@ -169,6 +165,7 @@ export const HeroContent = styled.div`
         text-align: center;
         margin-bottom: 0.8rem;
         font-family: 'Oswald', sans-serif;
+        display: block;
         
     }
 
@@ -177,16 +174,23 @@ export const HeroContent = styled.div`
         text-align: center;
         margin-bottom: 1.2rem;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-        /* font-weight: 00; */
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
         max-width: 90%;
+        display: block;
     }
 
     @media screen and (max-width: 800px){
         
         p{
             text-align: left;
+            font-size: 0.9rem;
+            display: block;        
+        }
+        h1{
+            font-size: 1.25rem;
+            display: block;
+
         }
     }
 `;

@@ -44,6 +44,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+
     .section-md-t3 {
         padding-top: 3rem;
     }
@@ -153,7 +157,7 @@ section {
     }
 
     .MissionContentBox .container img {
-        margin-top: 50px;
+        margin-top: 25px;
         box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
         background: center center no-repeat;
         background-size: cover;
@@ -204,7 +208,7 @@ section {
     }
 
     .VisionContentBox .container img {
-        margin-top: 50px;
+        margin-top: 25px;
         box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
     }
 }
@@ -268,7 +272,7 @@ section {
     }
 
     .PhilosophyContentBox .container img {
-        margin-top: 50px;
+        margin-top: 25px;
         box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
         background: center center no-repeat;
         background-size: cover;
@@ -320,7 +324,7 @@ section {
     height: 3px;
     background: #009961;
     bottom: 0;
-    right:0;
+    right: 0;
 }
 
 .img-fluid {
@@ -451,4 +455,3 @@ section {
 }
 
 /* TeamContent */
-

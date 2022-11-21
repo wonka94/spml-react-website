@@ -110,9 +110,13 @@ section {
     padding-top: 8rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .ContactSection .section-t8 {
         padding-top: 4rem;
+    }
+
+    .contact-map #map {
+        display: none;
     }
 }
 
