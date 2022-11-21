@@ -102,7 +102,7 @@ const ContactSection = () => {
                         </Row>
                     </Col>
                     <Row>
-                        <Col lg={6} className="section-t8">
+                        <Col lg={6} className="section-t8 mt-lg-0">
                             <div className="contact-map box" data-aos="fade-up">
                                 <div id="map" className="contact-map">
                                     <LoadScript googleMapsApiKey="AIzaSyCmg4CArFMc_i4bBYe1Os3RhV8_taAog08">
@@ -114,7 +114,7 @@ const ContactSection = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6} className="section-t8">
+                        <Col lg={6} className="section-t8 mt-lg-0">
                             <Form className="php-email-form" data-aos="fade-up">
                                 <Row>
                                     <Col className="mb-3" md={6}>
